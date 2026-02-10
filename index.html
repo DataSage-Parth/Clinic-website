@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuro Kids Care | Dr. Shashank Mishra</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- HEADER / HERO -->
     <header class="hero">
         <div class="container">
             <h1>Neuro Kids Care</h1>
@@ -17,58 +20,74 @@
         </div>
     </header>
 
-    <!-- ABOUT SECTION -->
     <section id="about" class="section">
         <div class="container">
-            <h2>About Dr. Shashank Mishra</h2>
+            <h2>About the Doctor</h2>
             <p>
-                Welcome to Neuro Kids Care! Dr. Shashank Mishra is a dedicated pediatrician
-                with experience in child health and wellness. A graduate of KGMU Lucknow
-                and trained at AIIMS New Delhi, he provides compassionate care to children
-                of all ages.
+                Dr. Shashank Mishra is a trusted pediatrician providing compassionate and expert
+                child care services in Bareilly, UP. He completed his MBBS and MD from reputed
+                medical institutions and specializes in child health, immunizations, and neuro pediatric care.
             </p>
         </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="services" class="section bg-light">
+    <section id="gallery" class="section bg-light">
         <div class="container">
-            <h2>Our Services</h2>
-            <ul>
-                <li>General Pediatric Checkups</li>
-                <li>Immunizations & Vaccines</li>
-                <li>Growth & Development Monitoring</li>
-                <li>Minor Illness Treatment</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section id="reviews" class="section">
-        <div class="container">
-            <h2>What Patients Say</h2>
-
-            <!-- Google Reviews Embed Placeholder -->
-            <div class="reviews-placeholder">
-                <!-- Replace with Google Reviews iframe or widget -->
-                <p>Google Reviews will appear here.</p>
+            <h2>Clinic Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/clinic1.jpg" alt="Clinic exterior">
+                <img src="images/clinic2.jpg" alt="Waiting area">
+                <img src="images/clinic3.jpg" alt="Consultation room">
+                <img src="images/clinic4.jpg" alt="Doctor with patient">
             </div>
         </div>
     </section>
 
-    <!-- CONTACT / APPOINTMENT -->
-    <section id="contact" class="section bg-light">
+    <section id="reviews" class="section">
         <div class="container">
-            <h2>Contact & Appointment</h2>
-            <p>Call or WhatsApp to book your appointment:</p>
-            <a href="tel:+911234567890" class="btn big">+91 12345 67890</a>
-            <p class="small">Or send a message on WhatsApp</p>
+            <h2>What Patients Say</h2>
+
+            <!-- Embed Google Maps Reviews -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!4vYOUR_GOOGLE_PLACES_EMBED_CODE_HERE"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+            <p>(Based on ~4.8★ from over 390 local ratings) :contentReference[oaicite:3]{index=3}</p>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <section id="map" class="section bg-light">
+        <div class="container">
+            <h2>Find Us Here</h2>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1s28.388584%2C79.428130"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+            <p>Tulip Grace, IVRI Rd, Near Thana, Izatnagar, Bareilly, UP 243122</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact & Appointment</h2>
+
+            <form id="contact-form" action="contact-handler.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="phone" name="phone" placeholder="Phone Number" required>
+                <textarea name="message" placeholder="Message (optional)"></textarea>
+                <button type="submit" class="btn big">Send Message</button>
+            </form>
+
+            <p>Or call/WhatsApp: <a href="tel:+918485930505">+91 84859 30505</a></p>
+        </div>
+    </section>
+
     <footer>
-        <p>© Neuro Kids Care | All rights reserved</p>
+        <p>© Neuro Kids Care | All Rights Reserved</p>
     </footer>
 
 </body>
